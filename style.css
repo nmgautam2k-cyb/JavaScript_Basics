@@ -1,0 +1,55 @@
+/*Grid*/
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 30px;
+    margin-left:300px;
+    align-items:center
+   
+}
+.box{
+    border: 1px solid black;
+    border-radius: 20px;
+    width:400px;
+    height: 300px;
+    padding: 20px;
+    background-color: azure;
+}
+
+.box h1 {
+    text-align: center;
+}
+
+.para {
+    background-color: beige;
+}
+
+/*CSS POSITIONING*/
+
+.parent{
+    position:relative;
+    top:30px;
+    left:80px;
+    height:400px;
+    width:500px;
+    border:solid 1px black;
+    background-color:red;
+    margin-bottom:50px;
+
+}
+
+.child{
+    position:absolute;
+    top:70px;
+    left:60px;
+    background-color:blueviolet;
+    color:white;
+    font-size:40px;
+}
+
+/*GRID MODULE*/
+

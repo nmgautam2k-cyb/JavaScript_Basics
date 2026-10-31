@@ -1,0 +1,24 @@
+{
+  "name": "java_script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmgautam2k-cyb/JavaScript_Basics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nmgautam2k-cyb/JavaScript_Basics/issues"
+  },
+  "homepage": "https://github.com/nmgautam2k-cyb/JavaScript_Basics#readme",
+  "devDependencies": {
+    "mocha": "^12.0.3"
+  }
+}

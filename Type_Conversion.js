@@ -1,3 +1,4 @@
+/*
 //explicit - Manual Conversion
 let age="22"
 let result=Number(age);
@@ -50,3 +51,10 @@ demo2("Gautam");
 
 const demo3=(a,b)=> a+b;
 console.log(demo3(50,34));
+
+*/
+
+//URI ENCODING(PERCENTAGE ENCODING)
+
+let name="Gautam NM";
+console.log(encodeURIComponent(name));
