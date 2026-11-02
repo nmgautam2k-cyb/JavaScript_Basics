@@ -1,5 +1,4 @@
 console.info("Application started successfully");
-console.log("hell0");
 
 /*
 //While

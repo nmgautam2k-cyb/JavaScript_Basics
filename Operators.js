@@ -1,4 +1,4 @@
-alert("Welcome Back");
+
 /*
 let a=10;
 let b=5;
@@ -45,7 +45,6 @@ else{
     console.log("Not allowed");
 }
 
-*/
 // ( || )
 const name="Alex";
 let age=22;
@@ -63,7 +62,7 @@ console.log(!isLoggedIn);
 
 console.log(true && false);
 
-//Ternary Operator
+//Ternary Operator 
 let b=33;
 let c=21;
 
@@ -88,3 +87,26 @@ switch(w){
     case "Progress":
         console.log("task is on progress");
 }
+*/
+//comparison operator
+let a=10;
+let d="10";
+
+console.log(a==d);
+console.log(a===d);
+console.log(a!=d);
+console.log(a!==d);
+console.log(a<d);
+console.log(a>d);
+console.log(a<=d);
+console.log(a>=d);
+
+//nullish coalesing
+let user;
+console.log(user);
+
+let res=user??"admin";
+console.log(res);
+
+//logical operator combines multiple condition(&& , || , !)
+//switch is a conditional branching statement and it is used to execute the different blocks of code based on value of an expression

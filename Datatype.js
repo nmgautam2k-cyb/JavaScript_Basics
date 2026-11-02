@@ -1,4 +1,4 @@
-confirm("Are You Suure");
+//confirm("Are You Suure");
 //Template Strings
 let name="Gautam";
 let age=22
@@ -53,40 +53,18 @@ let user={
 };
 
 
-console.log(user.age); //DOT NOTATION
-console.log(user["Dept"]); //BRACKET NOTATION
 
-
-
-//ARRAY(stores collection of data in a single variable, In js it can store differnet dtype)
-let arr1=[12,3,44,5,6];
-console.log(arr1);
-
-let arr2=[12,"gautam",null,undefined];
-console.log(arr2);
-
-//FUNCTION(Function is a block of code where we can reuse and designed to perform specific tasks when called)
-function user(){           
-    console.log("hello")
-}
-user();
-
-function user2(a,b){
-    console.log(a+b);
-}
-user2(10,2);  //with parameter and arguments
-
-
-function user2(b,c){
-    return b+c;
-}
-
-let a=user2(2,5);
-console.log(a);
-console.log(user2(2,6));   //with return
 */
+//SYMBOL
+let id1=Symbol(63);  // stored as unique value
+let id2=Symbol(63);
 
-//Data Object
+console.log(id1==id2);
 
 
-
+let a=100;
+let c=25.4455555555;
+let b=1.00;
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);

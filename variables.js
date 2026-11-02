@@ -1,3 +1,5 @@
+/*
+
 let user=prompt("Enter Your Name");
 console.log(user);
 
@@ -35,3 +37,4 @@ let name6="Gautam"
     let name6="sabeek"
     console.log(name6);
 }
+*/
