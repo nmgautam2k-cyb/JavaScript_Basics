@@ -57,7 +57,7 @@ user[2]="gokul";
 console.log(user);
 */
 
-let arr=["user1", "user2", "user3", "user4"];
+let arr = ["user1", "user2", "user3", "user4"];
 /*
 //pushes value at end 
 arr.push("user5");                              
@@ -84,7 +84,7 @@ console.log(arr.indexOf("user4"));
 */
 //ITERATION
 //for of for (iterate values one by one)(Loop statement)
-let name=["Gautam", "Gokul", "Alex", "Sanjay"];
+let name = ["Gautam", "Gokul", "Alex", "Sanjay"];
 
 /*
 for(let names of name){
@@ -93,12 +93,11 @@ for(let names of name){
 }
     */
 
-for(let names of name){
-    if(name=="Alex"){
-
-    }
-    continue;     
-                 //Break and Continue Supported
+for (let names of name) {
+  if (name == "Alex") {
+  }
+  continue;
+  //Break and Continue Supported
 }
 /*
 //for in for(Iterate values by index number)
@@ -112,12 +111,56 @@ name.forEach((names)=>{
 });
 */
 
-
-
-
 //filter(), find(), findIndex(), reduce(), slice(), splice(), sort() and reverse().
 
+//Map is used to transform every element of an array and return a new array
+let arr2 = ["Laptop", "Mobile", "TV", "Refridgelator", "Washing Machine"];
+let res = arr2.map((item) => item);
+console.log(res);
 
-//Map is ued to transform every element of an array and return a new array
- let arr2=["Laptop", "Mobile", "TV", "Refridgelator", "Washing Machine"];
- let res=arr2.map(arrr2=>)
+let user = [
+  { id: 1, name: "Gautam", dept: "MCA" },
+  { id: 2, name: "Gokul", dept: "MBA" },
+  { id: 3, name: "Sabeek", dept: "MCA" },
+];
+let res2=user.map(users=>users.name);
+console.log(res2);
+
+//Objects
+
+const student={
+    Name:"gautam",
+    Age:22,
+    Dept:"MCA"
+};
+
+//Dot Notation
+console.log(student.name);
+//Bracket Notation
+console.log(student[name]);
+
+//checks whether the properties exists
+console.log("Age" in student);
+
+//add new properties
+student.department="MCA";
+console.log(student);
+
+//constructor is a function where we can create multiple objects with same structure
+function student1(name, age){
+    this.name=name;
+    this.age=age;
+}
+const s1=new student1("Gautam",22)
+const s2=new student1("Gokul",23);
+
+console.log(s1);
+console.log(s2);
+
+//Optional Chaining is used to access an object's  properties safely without any error even if the property is null or undefinerd
+const student3={
+    name:"Gautam",
+    age:33
+};
+
+console.log(student3?.department);
