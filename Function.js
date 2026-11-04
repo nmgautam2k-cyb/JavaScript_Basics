@@ -9,25 +9,6 @@ console.log(age);
 display();
 
 
-//callback function
-function user(name){
-    console.log("Hello "+ name);
-}
-
-function display(callback){
-    console.log("display function executes first");
-    callback("Gautam");
-}
-display(user);
-
-
-let price=500;
-let quantity=3;
-
-let res=price**quantity;
-console.log(res);
-
-
 //FUNCTION(Function is a block of code where we can reuse and designed to perform specific tasks when called)
 function user(){           
     console.log("hello")
@@ -47,6 +28,18 @@ function user2(b,c){
 let a=user2(2,5);
 console.log(a);
 console.log(user2(2,6));   //with return
+
+//callback function (A Function is passed as an arguments to another Function)
+function user(name){
+    console.log("Hello "+ name);
+}
+
+function display(callback){
+    console.log("display function executes first");
+    callback("Gautam");
+}
+display(user);
+
 
 //Function and Function Expression
 
@@ -71,10 +64,15 @@ demo2("Gautam");
 
 const demo3=(a,b)=> a+b;
 console.log(demo3(50,34));
-
 */
 
-//URI ENCODING(PERCENTAGE ENCODING)
+ //Anonymous Function (Function without name)
+let details=function(name,age){
+    return `My name is ${name} and my age is ${age}`
+}
+console.log(details("Gautam",24));
 
+
+//URI ENCODING(PERCENTAGE ENCODING)
 let name="Gautam NM";
 console.log(encodeURIComponent(name));

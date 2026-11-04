@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>E_Listener</title>
+    <style>
+        body{
+            margin-left:400px;
+            margin-top:100px;
+        }
+        .container{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            background-color:aqua;
+            height:400px;
+            width:700px;
+            gap:10px;
+            border:solid 1px transparent;
+            border-radius:20px;
+        }
+        button{
+            width:200px;
+            height:50px;
+            border-radius:20px;
+        }
+    </style>
+  </head>
+  <body>
+    <!---Event Listner-->
+    <!---Click-->
+    <h1 style="margin-left:250px;">Event Listerner</h1>
+    <div class="container">
+      <p>Click</p>
+      <button id="btn" style="background-color:rgb(96, 178, 178);color:white">Yes</button>
+      <p>Mouseover</p>
+      <button id="btn2" style="background-color:rgb(96, 178, 178);color:white">May Be</button>
+    </div>
+
+    <script>
+      //Click EvenetListener
+      let Clickcount = 0;
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", (event) => {
+        Clickcount++;
+
+        if (btn.textContent === "Yes") {
+          btn.textContent = "No";
+        } else {
+          btn.textContent = "Yes";
+        }
+        console.log(Clickcount);
+      });
+
+      //Mouseover
+      const btn2 = document.getElementById("btn2");
+
+      btn2.addEventListener("mouseover", (event) => {
+        if (btn2.textContent === "Confirm") {
+          btn2.textContent = "May Be";
+        } else {
+          btn2.textContent = "Confirm";
+        }
+      });
+    </script>
+  </body>
+</html>

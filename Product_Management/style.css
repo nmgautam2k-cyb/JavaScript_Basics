@@ -1,0 +1,13 @@
+#formContainer{
+    margin-top:70px;
+}
+#productname_card{
+    display:flex;
+
+}
+#reset-button{
+    position:absolute;
+    bottom:48px;
+    right:50px;
+
+}

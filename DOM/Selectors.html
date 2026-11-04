@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <!--HTML Collections-->
+    <p class="message">Hello</p>
+    <p class="message">Heyy</p>
+    <p  class="message">World</p>
+
+
+    <h1 id="header">Hello</h1>
+
+    <script>
+      //HTML Collection
+      const element=document.getElementsByClassName("message");
+  
+      for(let i=0;i<element.length;i++){
+        console.log(element[i].textContent)
+      }
+
+      //Query Selector (provides First Occurance only)
+      const element2=document.querySelector('message');
+      console.log(element2);
+
+      //Create Dynamic HTML Elements
+
+    let header=document.getElementById("header");
+
+
+      let para=document.createElement('p');
+      para.textContent="Hello(Para)";
+      para.className="paragraph1"
+      console.log(para);
+      header.append(para);
+
+      header.prepend(para);
+      
+
+
+    </script>
+  </body>
+</html>
