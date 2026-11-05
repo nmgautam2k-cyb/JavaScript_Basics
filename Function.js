@@ -64,7 +64,7 @@ demo2("Gautam");
 
 const demo3=(a,b)=> a+b;
 console.log(demo3(50,34));
-*/
+
 
  //Anonymous Function (Function without name)
 let details=function(name,age){
@@ -73,6 +73,27 @@ let details=function(name,age){
 console.log(details("Gautam",24));
 
 
+//Named Function Expression(NFE) - its like function expression but with name, Function name is only accessible only within function(ex: Recrussion)
+let count=0;
+const demo=function count(num){
+    if(num==10){
+        return;
+    }
+    count(num+1);       //count is used inside function
+    console.log(num);
+}
+demo(1);  //can use this outside function
+*/
+
+//keyword - new Function (JS allows us to create function dynamically using new Function());
+let add=new Function("a","b", "return a+b");
+console.log(add(10,20));
+
+
+
+
+/*
 //URI ENCODING(PERCENTAGE ENCODING)
 let name="Gautam NM";
 console.log(encodeURIComponent(name));
+*/

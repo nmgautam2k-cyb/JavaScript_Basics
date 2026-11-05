@@ -35,7 +35,7 @@ const z={
     }
 
 //Break and Continue
-*/
+
 for(let i=1;i<=10;i++){         //break
     if(i==5){
         break;
@@ -49,3 +49,9 @@ for(let i=0;i<=10;i++){           //continue
     }
     console.log(i);
 }
+*/
+let products=[12,"gautam","Hello"];
+
+products.forEach(function(product){
+    console.log(product);
+})
